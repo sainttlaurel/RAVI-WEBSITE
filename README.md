@@ -8,6 +8,8 @@
 - Ravi Modular Cabinet focuses on delivering reliable service to clients wherever their projects may be. With a unified and efficient approach, the team works to reduce time, control costs, and deliver creative solutions that meet the evolving needs of modern spaces.
 - By combining deep industry knowledge with real project experience across various sectors, Ravi Modular Cabinet continues to provide design solutions that balance aesthetics, function, and durability.
 
+**Note:** The site is modified for personal learning and experimentation purposes only.
+
 ---
 
 ## Project Information
