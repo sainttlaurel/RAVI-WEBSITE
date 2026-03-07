@@ -3,34 +3,49 @@
 @import "footer.css";
 
 :root {
-  /* Color Palette */
-  --primary-gold: #E1B847;
-  --dark-bg: #0F0F0F;
-  --darker-bg: #181818;
-  --light-text: #ffffff;
-  --gradient-1: linear-gradient(135deg, #FFCD4B, #E9B824, #EE9322);
-  --gradient-2: linear-gradient(135deg, #D83F31, #C70039, #F94C10);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
+  /* Modern Minimal Color Palette */
+  --primary-accent: #2C3E50;
+  --secondary-accent: #95A5A6;
+  --warm-wood: #A67C52;
+  --soft-white: #F8F9FA;
+  --charcoal: #2C2C2C;
+  --light-gray: #E8E8E8;
   
-  /* Light Mode Colors */
-  --bg-primary: #0F0F0F;
-  --bg-secondary: #181818;
-  --text-primary: #E1B847;
-  --text-secondary: #ffffff;
+  --dark-bg: #1A1A1A;
+  --darker-bg: #0D0D0D;
+  --light-text: #FFFFFF;
+  
+  --gradient-1: linear-gradient(135deg, #2C3E50, #34495E);
+  --gradient-2: linear-gradient(135deg, #A67C52, #8B6F47);
+  --gradient-subtle: linear-gradient(180deg, rgba(248,249,250,0.05), rgba(248,249,250,0.02));
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.16);
+  
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Default Dark Mode */
+  --bg-primary: #0D0D0D;
+  --bg-secondary: #1A1A1A;
+  --text-primary: #F8F9FA;
+  --text-secondary: #B8B8B8;
+  --primary-gold: #A67C52;
 }
 
 [data-theme="light"] {
-  --bg-primary: #f5f5f5;
-  --bg-secondary: #ffffff;
-  --text-primary: #D83F31;
-  --text-secondary: #333333;
-  --dark-bg: #f5f5f5;
-  --darker-bg: #ffffff;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+  --text-primary: #2C2C2C;
+  --text-secondary: #5A5A5A;
+  --dark-bg: #FFFFFF;
+  --darker-bg: #F8F9FA;
+  --primary-gold: #2C3E50;
+  --shadow-sm: 0 2px 8px rgba(44, 62, 80, 0.08);
+  --shadow-md: 0 4px 20px rgba(44, 62, 80, 0.12);
+  --shadow-lg: 0 8px 40px rgba(44, 62, 80, 0.16);
 }
 
 * {
@@ -97,10 +112,10 @@ body::-webkit-scrollbar-button {
 .loader {
   width: 50px;
   height: 50px;
-  border: 5px solid rgba(225, 184, 71, 0.2);
+  border: 4px solid rgba(166, 124, 82, 0.15);
   border-top-color: var(--primary-gold);
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 0.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes spin {
@@ -136,8 +151,8 @@ body::-webkit-scrollbar-button {
 }
 
 .back-to-top:hover {
-  background: #D8A82E;
-  transform: translateY(-5px);
+  background: #8B6F47;
+  transform: translateY(-5px) scale(1.05);
   box-shadow: var(--shadow-lg);
 }
 
@@ -163,8 +178,8 @@ body::-webkit-scrollbar-button {
 }
 
 .theme-toggle:hover {
-  background: #D8A82E;
-  transform: rotate(180deg);
+  background: #8B6F47;
+  transform: rotate(180deg) scale(1.05);
 }
 
 /* Fade In Animation */

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="../CSS/gallery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" href="https://i.imgur.com/nMdo4LG.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
 
     <div class="contentWrapper">
       <!-- Search Bar -->
-      <div class="gallery-controls fade-in">
+      <div class="gallery-controls fade-in scroll-reveal">
         <div class="search-bar">
           <i class="fas fa-search"></i>
           <input type="text" id="gallerySearch" placeholder="Search gallery..." />
@@ -48,59 +48,59 @@
       </div>
 
       <!-- IMAGE GALLERY -->
-      <div class="container fade-in">
-        <div class="heading">
+      <div class="container fade-in scroll-reveal">
+        <div class="heading scroll-reveal">
           <h3>RAVI <span>Gallery</span></h3>
           <p class="gallery-subtitle">Explore our finest cabinet designs and installations</p>
         </div>
         <div class="box">
-          <div class="rows">
-            <img src="https://i.imgur.com/XRBqjFJ.jpg" alt="Cabinet Design 1" loading="lazy">
-            <img src="https://i.imgur.com/4pPLUl8.jpg" alt="Cabinet Design 2" loading="lazy">
-            <img src="https://i.imgur.com/pOep9Cd.jpg" alt="Cabinet Design 3" loading="lazy">
-            <img src="https://i.imgur.com/ZsRrtye.jpg" alt="Cabinet Design 4" loading="lazy">
-            <img src="https://i.imgur.com/WS7o3DS.jpg" alt="Cabinet Design 5" loading="lazy">
-            <img src="https://i.imgur.com/hMvxBtt.jpg" alt="Cabinet Design 6" loading="lazy">
-            <img src="https://i.imgur.com/5NYG6BN.jpg" alt="Cabinet Design 7" loading="lazy">
-            <img src="https://i.imgur.com/2YRP1Zr.jpg" alt="Cabinet Design 8" loading="lazy">
-            <img src="https://i.imgur.com/iQXP8e5.jpg" alt="Cabinet Design 9" loading="lazy">
-            <img src="https://i.imgur.com/IYvnuMB.jpg" alt="Cabinet Design 10" loading="lazy">
+          <div class="rows scroll-reveal">
+            <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&q=80" alt="Modern White Kitchen Cabinet" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Minimalist Kitchen Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80" alt="Contemporary Bedroom Wardrobe" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Modern Office Cabinet" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Living Room Built-in Storage" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Scandinavian Kitchen" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Modern Kitchen Island" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Contemporary Kitchen Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80" alt="Minimal White Kitchen" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Modern Kitchen Cabinets" loading="lazy">
           </div>
-          <div class="rows">
-            <img src="https://i.imgur.com/OFfMBE7.jpg" alt="Cabinet Design 11" loading="lazy">
-            <img src="https://i.imgur.com/gtNoON2.jpg" alt="Cabinet Design 12" loading="lazy">
-            <img src="https://i.imgur.com/sYkwqGX.jpg" alt="Cabinet Design 13" loading="lazy">
-            <img src="https://i.imgur.com/TWe3f40.jpg" alt="Cabinet Design 14" loading="lazy">
-            <img src="https://i.imgur.com/PLVh0Lq.jpg" alt="Cabinet Design 15" loading="lazy">
-            <img src="https://i.imgur.com/XRBqjFJ.jpg" alt="Cabinet Design 16" loading="lazy">
-            <img src="https://i.imgur.com/4pPLUl8.jpg" alt="Cabinet Design 17" loading="lazy">
-            <img src="https://i.imgur.com/pOep9Cd.jpg" alt="Cabinet Design 18" loading="lazy">
-            <img src="https://i.imgur.com/ZsRrtye.jpg" alt="Cabinet Design 19" loading="lazy">
-            <img src="https://i.imgur.com/WS7o3DS.jpg" alt="Cabinet Design 20" loading="lazy">
+          <div class="rows scroll-reveal">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=600&q=80" alt="Luxury Kitchen Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Modern Kitchen Interior" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=600&q=80" alt="Contemporary Wardrobe" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80" alt="Minimalist Cabinet Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566752229-250ed79470e6?w=600&q=80" alt="Modern Kitchen Setup" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=600&q=80" alt="White Kitchen Cabinets" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=600&q=80" alt="Contemporary Kitchen" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=600&q=80" alt="Modern Kitchen Space" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Living Room Storage" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&q=80" alt="Office Cabinet Design" loading="lazy">
           </div>
-          <div class="rows">
-            <img src="https://i.imgur.com/hMvxBtt.jpg" alt="Cabinet Design 21" loading="lazy">
-            <img src="https://i.imgur.com/5NYG6BN.jpg" alt="Cabinet Design 22" loading="lazy">
-            <img src="https://i.imgur.com/2YRP1Zr.jpg" alt="Cabinet Design 23" loading="lazy">
-            <img src="https://i.imgur.com/iQXP8e5.jpg" alt="Cabinet Design 24" loading="lazy">
-            <img src="https://i.imgur.com/IYvnuMB.jpg" alt="Cabinet Design 25" loading="lazy">
-            <img src="https://i.imgur.com/OFfMBE7.jpg" alt="Cabinet Design 26" loading="lazy">
-            <img src="https://i.imgur.com/gtNoON2.jpg" alt="Cabinet Design 27" loading="lazy">
-            <img src="https://i.imgur.com/sYkwqGX.jpg" alt="Cabinet Design 28" loading="lazy">
-            <img src="https://i.imgur.com/TWe3f40.jpg" alt="Cabinet Design 29" loading="lazy">
-            <img src="https://i.imgur.com/PLVh0Lq.jpg" alt="Cabinet Design 30" loading="lazy">
+          <div class="rows scroll-reveal">
+            <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80" alt="Modern Workspace" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&q=80" alt="Bedroom Wardrobe Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Kitchen Cabinet Details" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Minimal Kitchen" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=600&q=80" alt="Contemporary Cabinet" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=600&q=80" alt="Luxury Cabinet Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Modern Kitchen View" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&q=80" alt="Kitchen Storage Solutions" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80" alt="Minimalist Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566752229-250ed79470e6?w=600&q=80" alt="Modern Kitchen Layout" loading="lazy">
           </div>
-          <div class="rows">
-            <img src="https://i.imgur.com/hMvxBtt.jpg" alt="Cabinet Design 31" loading="lazy">
-            <img src="https://i.imgur.com/5NYG6BN.jpg" alt="Cabinet Design 32" loading="lazy">
-            <img src="https://i.imgur.com/2YRP1Zr.jpg" alt="Cabinet Design 33" loading="lazy">
-            <img src="https://i.imgur.com/iQXP8e5.jpg" alt="Cabinet Design 34" loading="lazy">
-            <img src="https://i.imgur.com/IYvnuMB.jpg" alt="Cabinet Design 35" loading="lazy">
-            <img src="https://i.imgur.com/OFfMBE7.jpg" alt="Cabinet Design 36" loading="lazy">
-            <img src="https://i.imgur.com/gtNoON2.jpg" alt="Cabinet Design 37" loading="lazy">
-            <img src="https://i.imgur.com/sYkwqGX.jpg" alt="Cabinet Design 38" loading="lazy">
-            <img src="https://i.imgur.com/TWe3f40.jpg" alt="Cabinet Design 39" loading="lazy">
-            <img src="https://i.imgur.com/PLVh0Lq.jpg" alt="Cabinet Design 40" loading="lazy">
+          <div class="rows scroll-reveal">
+            <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=600&q=80" alt="White Cabinet Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Kitchen Island Cabinet" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Scandinavian Style" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=600&q=80" alt="Wardrobe Interior" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80" alt="Bedroom Storage" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Office Organization" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=600&q=80" alt="Modern Kitchen Aesthetic" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80" alt="Clean Kitchen Design" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Cabinet Craftsmanship" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&q=80" alt="Premium Kitchen Cabinets" loading="lazy">
           </div>
         </div>
       </div>
@@ -120,6 +120,7 @@
     <div class="modal-caption"></div>
   </div>
 
+  <script src="../JS/modern-features.js"></script>
 </body>
 
 </html>

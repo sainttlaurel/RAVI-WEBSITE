@@ -1,37 +1,69 @@
-<script src="script.js"></script>
+<script src="../JS/script.js"></script>
 
 <header>
   <div class="headerContent">
     <!--LOGO OF THE WEBPAGE (LEFT SIDE)-->
     <div class="logo">
-      <a href="./adminlogin.php"><img src="https://i.imgur.com/nMdo4LG.jpg" alt="Logo" /></a>
+      <a href="./adminlogin.php">
+        <div class="logo-circle">
+          <i class="fas fa-couch"></i>
+        </div>
+      </a>
     </div>
-    <!--BUTTON OF THE WEBPAGE (CENTER)-->
+    <!--NAVIGATION MENU (CENTER)-->
     <div class="menu">
-      <a href="./index.php"><img src="https://i.imgur.com/MKtDkr4.jpg" alt="Home" title="Home" /></a>
-      <a class="navOptions" href="./gallery.php"><img src="https://i.imgur.com/y4729Zq.png" alt="Gallery" title="Gallery"></a>
-      <a href="./aboutus.php"><img src="https://i.imgur.com/OOChP9p.jpg" alt="About" title="About Us" /></a>
-      <a href="./contactus.php"><img src="https://i.imgur.com/IfA3jkv.jpg" alt="Contact" title="Contact Us" /></a>
+      <a href="./index.php" class="nav-link" title="Home">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="./gallery.php" class="nav-link" title="Gallery">
+        <i class="fas fa-images"></i>
+        <span>Gallery</span>
+      </a>
+      <a href="./aboutus.php" class="nav-link" title="About Us">
+        <i class="fas fa-info-circle"></i>
+        <span>About</span>
+      </a>
+      <a href="./contactus.php" class="nav-link" title="Contact Us">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+      </a>
     </div>
-    <!--HEAD OF THE WEBPAGE (RIGHT SIDE)-->
+    <!--APPOINTMENT BUTTON (RIGHT SIDE)-->
     <div class="appointment">
-      <a href="./forms.php"><img src="https://i.imgur.com/D4hFlbb.jpg" alt="LogUp" title="Appointment" /></a>
+      <a href="./forms.php" class="appointment-btn" title="Book Appointment">
+        <i class="fas fa-calendar-check"></i>
+        <span>Book Now</span>
+      </a>
     </div>
-    <!-- DROPDOWN MENU BUTTONS -->
-    <button class="hamburg-ico" id="hamburg-ico" onClick="dropDownFunc()"><img src="https://i.imgur.com/zz1orbo.jpg"
-        alt="Menu" title="Menu"></button>
+    <!-- MOBILE MENU BUTTON -->
+    <button class="hamburg-ico" id="hamburg-ico" onClick="dropDownFunc()" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </div>
-  <!-- DROPDOWN MENU -->
+  <!-- MOBILE DROPDOWN MENU -->
   <div class="relativeDropdown" id="dropdown">
     <div class="navDropdown">
-      <a class="navOptions" href="./index.php"><img src="https://i.imgur.com/MKtDkr4.jpg" alt="Home" title="Home" /></a>
-      <a class="navOptions" href="./gallery.php"><img src="https://i.imgur.com/y4729Zq.png" alt="Gallery" title="Gallery"></a>
-      <a class="navOptions" href="./aboutus.php"><img src="https://i.imgur.com/OOChP9p.jpg" alt="About"
-          title="About Us" /></a>
-      <a class="navOptions" href="./contactus.php"><img src="https://i.imgur.com/IfA3jkv.jpg" alt="Contact"
-          title="Contact Us" /></a>
-      <a class="navOptions" href="./forms.php"><img src="https://i.imgur.com/D4hFlbb.jpg" alt="Appointment"
-          title="Book Appointment" /></a>
+      <a class="navOptions" href="./index.php" title="Home">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a class="navOptions" href="./gallery.php" title="Gallery">
+        <i class="fas fa-images"></i>
+        <span>Gallery</span>
+      </a>
+      <a class="navOptions" href="./aboutus.php" title="About Us">
+        <i class="fas fa-info-circle"></i>
+        <span>About</span>
+      </a>
+      <a class="navOptions" href="./contactus.php" title="Contact Us">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+      <a class="navOptions" href="./forms.php" title="Book Appointment">
+        <i class="fas fa-calendar-check"></i>
+        <span>Book</span>
+      </a>
     </div>
   </div>
 </header>
