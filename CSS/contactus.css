@@ -1,0 +1,250 @@
+@import "main-components.css";
+
+.bodyFlex {
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  padding: 120px 20px 60px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.contact-left,
+.contact-right {
+  background: rgba(24, 24, 24, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(225, 184, 71, 0.3);
+  border-radius: 25px;
+  padding: 40px;
+  transition: all var(--transition-normal);
+}
+
+[data-theme="light"] .contact-left,
+[data-theme="light"] .contact-right {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(216, 63, 49, 0.3);
+}
+
+.contact-left:hover,
+.contact-right:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-header i {
+  font-size: 2rem;
+  color: var(--primary-gold);
+}
+
+.contact-header h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.contact-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(225, 184, 71, 0.05);
+  border-radius: 15px;
+  transition: all var(--transition-normal);
+}
+
+.contact-icon:hover {
+  background: rgba(225, 184, 71, 0.1);
+  transform: translateX(10px);
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  background: var(--gradient-1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--dark-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h4 {
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-text a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.contact-text a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-gold);
+  transition: width var(--transition-fast);
+}
+
+.contact-text a:hover {
+  color: var(--primary-gold);
+}
+
+.contact-text a:hover::after {
+  width: 100%;
+}
+
+/* Map Section */
+.map-section {
+  background: rgba(24, 24, 24, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(225, 184, 71, 0.3);
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+}
+
+[data-theme="light"] .map-section {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(216, 63, 49, 0.3);
+}
+
+.map-section h3 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.map-section h3 i {
+  color: var(--primary-gold);
+}
+
+.map-placeholder {
+  height: 400px;
+  background: rgba(225, 184, 71, 0.05);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 2px dashed rgba(225, 184, 71, 0.3);
+}
+
+.map-placeholder i {
+  font-size: 4rem;
+  color: var(--primary-gold);
+  opacity: 0.5;
+}
+
+.map-placeholder p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    padding: 100px 15px 40px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-left,
+  .contact-right {
+    padding: 30px 20px;
+  }
+
+  .contact-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-desc {
+    font-size: 1rem;
+  }
+
+  .icon-wrapper {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    font-size: 1.3rem;
+  }
+
+  .map-placeholder {
+    height: 300px;
+  }
+
+  .map-placeholder i {
+    font-size: 3rem;
+  }
+}
