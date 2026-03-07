@@ -6,23 +6,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Quick Start](#quick-start)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage Guide](#usage-guide)
-- [Admin Dashboard](#admin-dashboard)
-- [Website Features](#website-features)
-- [Database Structure](#database-structure)
-- [Security](#security)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🎯 Overview
 
 RAVI Modular Cabinet Booking System is a personal web development project created to learn and practice modern web technologies. This project demonstrates the implementation of a booking system with Firebase integration, responsive design, and interactive features.
@@ -1104,3 +1087,4 @@ If you find this project helpful, please consider:
 ---
 
 *Last updated: March 7, 2026*
+
