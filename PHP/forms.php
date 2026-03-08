@@ -151,6 +151,7 @@
             
             // Get form data
             const formData = new FormData();
+            formData.append('form_type', 'appointment');
             formData.append('name', document.getElementById('name').value);
             formData.append('phone', document.getElementById('number').value);
             formData.append('email', document.getElementById('email').value);
@@ -165,7 +166,7 @@
             submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
             
             // Send data to server
-            fetch('submit_form.php', {
+            fetch('submit_contact.php', {
                 method: 'POST',
                 body: formData
             })

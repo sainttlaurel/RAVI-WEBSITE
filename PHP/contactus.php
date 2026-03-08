@@ -108,25 +108,27 @@
             </div>
             <p class="contact-desc">Your feedback helps us improve</p>
             
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
+              <input type="hidden" name="form_type" value="contact">
+              
               <div class="form-group">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
               </div>
               
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Your Email" required>
+                <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
               </div>
               
               <div class="form-group">
                 <i class="fas fa-tag"></i>
-                <input type="text" placeholder="Subject" required>
+                <input type="text" name="subject" id="contact-subject" placeholder="Subject" required>
               </div>
               
               <div class="form-group">
                 <i class="fas fa-comment-dots"></i>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="contact-message" rows="5" placeholder="Your Message" required></textarea>
               </div>
               
               <button type="submit" class="submit-btn">
@@ -168,5 +170,54 @@
 
   <?php include("slider.php"); ?>
   <script src="../JS/modern.js"></script>
+  <script>
+    // Handle contact form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      
+      // Log what we're sending
+      console.log('Submitting contact form with data:');
+      for (let [key, value] of formData.entries()) {
+        console.log(key + ': ' + value);
+      }
+      
+      // Disable submit button
+      const submitBtn = this.querySelector('.submit-btn');
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+      
+      // Send data to server
+      fetch('submit_contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        console.log('Response status:', response.status);
+        return response.json();
+      })
+      .then(data => {
+        console.log('Response data:', data);
+        if (data.success) {
+          alert(data.message);
+          this.reset();
+        } else {
+          alert('Error: ' + data.message);
+        }
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+        alert('Error submitting form. Please check console for details.');
+      })
+      .finally(() => {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+      });
+    });
+  </script>
 </body>
 </html>
