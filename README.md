@@ -64,25 +64,19 @@ RAVI-WEBSITE
 ├── screenshots/ # Project screenshots
 └── README.md
 
-
 ---
 
-# 🚀 Installation
+## 🚀 Installation
 
-Clone the repository
+Clone the repository:
 
-```bash
 git clone https://github.com/yourusername/ravi-cabinet-booking.git
-
-Move the project into your XAMPP htdocs folder
-
+Move the project into your XAMPP htdocs folder:
 C:\xampp\htdocs\RAVI WEBSITE\
-
 Configure Firebase:
-
 ravi-FIREBASE-PHP/config.php
 
-Start Apache and open:
+Start Apache and open the project in your browser:
 
 http://localhost/RAVI%20WEBSITE/
 🔐 Admin Access
@@ -95,24 +89,28 @@ Password: admin123
 ⚠️ Change these credentials before deployment.
 
 📸 Screenshots
-Homepage	Admin Dashboard
+Homepage	
+<img width="1914" height="991" alt="image" src="https://github.com/user-attachments/assets/e0deb5b9-61d1-46c8-ad73-01437f3f665e" />
 
-	
-Booking Form	Gallery
+Admin Dashboard
+<img width="1915" height="991" alt="image" src="https://github.com/user-attachments/assets/d35011d0-917a-40de-bc23-60d1a86d7119" />
 
-	
+Booking Form	
+<img width="1918" height="993" alt="image" src="https://github.com/user-attachments/assets/f9b3164d-6e48-46d7-bac3-68fb60b1f1be" />
+<img width="1915" height="992" alt="image" src="https://github.com/user-attachments/assets/e6ce8b04-90e6-4c2a-8f66-40e39fa5811d" />
+
+Gallery
+<img width="1918" height="992" alt="image" src="https://github.com/user-attachments/assets/61ae4179-465e-4b7f-8a39-37658d5b4390" />
+
+
 ⚠️ Project Note
 
 This system was created as a personal learning project to practice:
 
 PHP backend development
-
 Firebase database integration
-
 CRUD application design
-
 Admin dashboard implementation
-
 Responsive UI development
 
 It may require additional security improvements before production deployment.
@@ -120,13 +118,9 @@ It may require additional security improvements before production deployment.
 📈 Future Improvements
 
 Email notifications for new bookings
-
 Calendar integration
-
 Authentication improvements
-
 Advanced analytics dashboard
-
 Payment gateway support
 
 🤝 Contributing
@@ -150,23 +144,14 @@ IT / Web Development Portfolio Project
 
 ⭐ If you found this project helpful, consider starring the repository.
 
-
 ---
 
-✅ This version looks **much more professional on GitHub** because it includes:
+This version is:
 
-- **Project badges**
-- **Clean section hierarchy**
-- **Portfolio-friendly description**
-- **Minimal but complete documentation**
-- **Professional screenshot layout**
+- **Proper GitHub Markdown**
+- **Clean spacing**
+- **Professional layout**
+- **Correct code blocks**
+- **Screenshot table supported by GitHub**
 
----
-
-If you want, I can also show you **3 advanced README improvements used by top GitHub repos** like:
-
-- **Live typing banner**
-- **Tech stack icons**
-- **Animated preview GIF**
-
-These will make your repository **look like a senior developer portfolio project.**
+If you want, I can also show you **one advanced README trick used by top GitHub repos.
