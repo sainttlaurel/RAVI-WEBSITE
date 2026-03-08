@@ -1,0 +1,318 @@
+/* ========================================
+   MODERN DESIGN SYSTEM - RAVI CABINET
+   ======================================== */
+
+/* Smooth Animations */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Enhanced Hover Effects */
+.feature-card,
+.service-item,
+.stat-item,
+.member-content-one,
+.about-content,
+.quick-link-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover,
+.member-content-one:hover,
+.quick-link-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.stat-item:hover {
+  transform: scale(1.1);
+}
+
+/* Floating Animation for Logo */
+.custom-header {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-15px) rotate(2deg); 
+  }
+}
+
+/* Button Enhancements */
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Image Zoom on Hover */
+.service-item img,
+.rows img,
+.member-image-one img,
+.about-content .image img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-item:hover img,
+.rows img:hover,
+.member-image-one:hover img,
+.about-content:hover .image img {
+  transform: scale(1.15);
+}
+
+/* Lightbox for Gallery */
+.rows img {
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rows img:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon Animations */
+.feature-icon,
+.icon-wrapper i,
+.contact-header i,
+.hero-overlay i {
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover .feature-icon,
+.contact-icon:hover .icon-wrapper i {
+  transform: scale(1.2) rotate(360deg);
+}
+
+/* Gradient Text Effects */
+.section-title,
+.heading h3 {
+  background: linear-gradient(135deg, #A67C52, #E1B847, #A67C52);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+/* Pulse Animation for Stats */
+.stat-number {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+/* Smooth Scroll Reveal */
+.feature-card,
+.service-item,
+.stat-item,
+.about-content,
+.member-content-one {
+  opacity: 0;
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered Animation Delays */
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+.service-item:nth-child(1) { animation-delay: 0.1s; }
+.service-item:nth-child(2) { animation-delay: 0.2s; }
+.service-item:nth-child(3) { animation-delay: 0.3s; }
+.service-item:nth-child(4) { animation-delay: 0.4s; }
+
+.stat-item:nth-child(1) { animation-delay: 0.1s; }
+.stat-item:nth-child(2) { animation-delay: 0.2s; }
+.stat-item:nth-child(3) { animation-delay: 0.3s; }
+.stat-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Enhanced Form Inputs */
+.contact-form input,
+.contact-form textarea {
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(166, 124, 82, 0.3);
+}
+
+/* Submit Button Animation */
+.submit-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.submit-btn:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Loading State */
+.submit-btn:active {
+  transform: scale(0.95);
+}
+
+/* Parallax Effect for Background */
+.slider {
+  transition: transform 0.5s ease-out;
+}
+
+/* Enhanced Shadows */
+.feature-card,
+.service-item,
+.contact-container,
+.about-content {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card:hover,
+.service-item:hover,
+.about-content:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Glassmorphism Effect */
+.stats-section,
+.contact-container {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Smooth Page Transitions */
+.contentWrapper {
+  animation: pageSlide 0.6s ease-out;
+}
+
+@keyframes pageSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Enhanced Quote Styling */
+.quote {
+  position: relative;
+  animation: fadeInScale 1s ease-out 0.3s both;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .feature-card:hover,
+  .service-item:hover,
+  .stat-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .custom-header {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .btn,
+  .headerWrapper,
+  .footerWrapper,
+  .slider {
+    display: none;
+  }
+}

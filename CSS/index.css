@@ -10,9 +10,10 @@ body {
 }
 
 .contentWrapper {
-  flex-direction: column;
-  gap: 60px;
+  display: block;
+  width: 100%;
   padding: 40px 20px;
+  min-height: 100vh;
 }
 
 .homeTitle {
@@ -22,8 +23,10 @@ body {
   align-items: center;
   width: 90%;
   max-width: 1200px;
-  margin: 60px auto 0;
+  margin: 60px auto 80px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 /* TITLE HEADER */
@@ -433,3 +436,378 @@ body {
 .cta-buttons .btn:hover {
   animation: none;
 }
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefit-card {
+  background: var(--gradient-subtle);
+  padding: 40px 30px;
+  border-radius: 16px;
+  transition: all var(--transition-normal);
+  border: 1px solid rgba(166, 124, 82, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="light"] .benefit-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(44, 62, 80, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-2);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.benefit-card:hover::before {
+  transform: scaleX(1);
+}
+
+.benefit-icon {
+  font-size: 3.5rem;
+  color: var(--primary-gold);
+  margin-bottom: 20px;
+  transition: transform var(--transition-normal);
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.benefit-card h3 {
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Process Section */
+.process-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.process-step {
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto 25px;
+  box-shadow: 0 8px 24px rgba(166, 124, 82, 0.3);
+  transition: all var(--transition-normal);
+}
+
+.process-step:hover .step-number {
+  transform: scale(1.15) rotate(360deg);
+  box-shadow: 0 12px 32px rgba(166, 124, 82, 0.5);
+}
+
+.step-content h3 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.testimonial-card {
+  background: var(--gradient-subtle);
+  padding: 40px 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(166, 124, 82, 0.15);
+  transition: all var(--transition-normal);
+  text-align: left;
+  position: relative;
+}
+
+[data-theme="light"] .testimonial-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(44, 62, 80, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.testimonial-stars {
+  color: #FFD700;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-stars i {
+  margin-right: 5px;
+}
+
+.testimonial-text {
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(166, 124, 82, 0.2);
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.author-info h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.author-info p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto 80px;
+  background: var(--gradient-2);
+  padding: 80px 40px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content h2 {
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-buttons-large {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-cta-primary {
+  padding: 18px 40px;
+  background: white;
+  color: #2C3E50;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all var(--transition-normal);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  background: #f8f9fa;
+}
+
+.btn-cta-secondary {
+  padding: 18px 40px;
+  background: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all var(--transition-normal);
+}
+
+.btn-cta-secondary:hover {
+  background: white;
+  color: #2C3E50;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits-grid,
+  .process-timeline,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 60px 30px;
+  }
+
+  .cta-buttons-large {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-cta-primary,
+  .btn-cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Staggered Animations */
+.benefit-card.scroll-reveal:nth-child(1) { transition-delay: 0.1s; }
+.benefit-card.scroll-reveal:nth-child(2) { transition-delay: 0.2s; }
+.benefit-card.scroll-reveal:nth-child(3) { transition-delay: 0.3s; }
+.benefit-card.scroll-reveal:nth-child(4) { transition-delay: 0.4s; }
+
+.process-step.scroll-reveal:nth-child(1) { transition-delay: 0.1s; }
+.process-step.scroll-reveal:nth-child(2) { transition-delay: 0.2s; }
+.process-step.scroll-reveal:nth-child(3) { transition-delay: 0.3s; }
+.process-step.scroll-reveal:nth-child(4) { transition-delay: 0.4s; }
+
+.testimonial-card.scroll-reveal:nth-child(1) { transition-delay: 0.1s; }
+.testimonial-card.scroll-reveal:nth-child(2) { transition-delay: 0.2s; }
+.testimonial-card.scroll-reveal:nth-child(3) { transition-delay: 0.3s; }

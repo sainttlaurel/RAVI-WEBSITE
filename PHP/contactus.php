@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../CSS/contactus.css">
+  <link rel="stylesheet" href="../CSS/contactus.css?v=2">
+  <link rel="stylesheet" href="../CSS/modern.css">
   <link rel="stylesheet" href="../CSS/header.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" href="https://i.imgur.com/nMdo4LG.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Contact Us - Ravi Modular Cabinet</title>
 </head>
 
 <body>
-  <!-- Loading Screen -->
-  <div class="loading-screen">
-    <div class="loader"></div>
-  </div>
-
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
   <div class="bodyFlex">
     <div class="headerWrapper">
       <?php include("header.php"); ?>
     </div>
 
     <div class="contentWrapper">
-      <!-- Hero Section -->
-      <div class="contact-hero fade-in">
+      <div class="contact-hero">
         <div class="hero-overlay">
           <i class="fas fa-envelope-open-text"></i>
           <h1>Get In Touch</h1>
@@ -43,7 +29,7 @@
         </div>
       </div>
 
-      <div class="contact-wrapper fade-in">
+      <div class="contact-wrapper">
         <div class="contact-container">
           <div class="contact-left">
             <div class="contact-header">
@@ -105,16 +91,6 @@
 
               <div class="contact-icon">
                 <div class="icon-wrapper">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-text">
-                  <h4>Phone</h4>
-                  <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                </div>
-              </div>
-
-              <div class="contact-icon">
-                <div class="icon-wrapper">
                   <i class="fas fa-clock"></i>
                 </div>
                 <div class="contact-text">
@@ -161,8 +137,7 @@
           </div>
         </div>
 
-        <!-- Quick Links Section -->
-        <div class="quick-links-section fade-in">
+        <div class="quick-links-section">
           <h3><i class="fas fa-link"></i> Quick Links</h3>
           <div class="quick-links-grid">
             <a href="./forms.php" class="quick-link-card">
@@ -192,6 +167,6 @@
   </div>
 
   <?php include("slider.php"); ?>
+  <script src="../JS/modern.js"></script>
 </body>
-
 </html>
