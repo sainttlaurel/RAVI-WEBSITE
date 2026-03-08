@@ -153,5 +153,3 @@ This version is:
 - **Professional layout**
 - **Correct code blocks**
 - **Screenshot table supported by GitHub**
-
-If you want, I can also show you **one advanced README trick used by top GitHub repos.
